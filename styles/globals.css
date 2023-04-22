@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+    scroll-behavior: smooth !important;
+}
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #F7AB0A;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 5px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #F7AB0A;
+    border-radius: 14px;
+    border: 3px solid #F7AB0A;
+  }
+.main_container{
+    scroll-behavior: smooth !important;
+    transition: 0.5s;
+}
+
+.mySwiper {
+    width: 500px;
+    height: 600px;
+}
+  
+.mySwiper .swiper-slide {
+background-position: center;
+background-size: cover;
+width: 500px;
+height: 600px;
+}
+.mySwiper2{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.mySwiper2 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:776px){
+    .mySwiper {
+        width: 400px;
+        height: 500px;
+    }
+      
+    .mySwiper .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 500px;
+    }
+}
+
+
+
+.main_container{
+    background-color: rgb(31 31 56 /90%);
+}
+body{
+    /* background-image: url('../public//image/Black Panther Wallpaper.jpg'); */
+    background-image: url('../public//image/wp4923981-react-js-wallpapers.jpg');
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@layer components{
+    .heroButton{
+        @apply px-6 md:py-2 py-1 border border-[#242424] rounded-full uppercase md:text-xs text-[11px]  md:tracking-[3px] tracking-[1px] 
+        text-gray-500 transition-all 
+        hover:border-[#F7AB0A]/40 
+        hover:text-[#F7AB0A]/40
+    }
+    .heroButton2{
+        @apply px-6 md:py-2 py-1 border border-[#242424] rounded-full uppercase md:text-xs text-[11px]  md:tracking-[3px] tracking-[1px] 
+        text-gray-500 transition-all 
+        hover:border-[#F7AB0A]/40 
+        hover:text-[#F7AB0A]/40
+        bg-black
+        w-[150px]
+        whitespace-nowrap
+        text-center
+    }
+    .headers_sections{
+        @apply  top-24 uppercase tracking-[20px] text-gray-500 text-2xl  text-center animate-pulse font-semibold 
+    }
+    /* .cardExperince{
+        @apply flex h-full flex-col rounded-lg items-center  flex-shrink-0 w-[400px] md:w-[500px] lg:w-[600px] snap-center bg-[#292929] p-5 hover:opacity-100 opacity-40 transition-opacity duration-200 cursor-pointer overflow-y-scroll
+    } */
+
+    /* .cardExperince{
+        @apply flex h-[490px]  md:h-[600px] flex-col rounded-lg items-center  flex-shrink-0 w-[450px] md:w-[450px] lg:w-[500px] snap-center bg-[#292929] p-5 hover:opacity-100 opacity-40 transition-opacity duration-200 cursor-pointer 
+    } */
+
+        .cardExperince{
+        @apply flex h-[490px]  md:h-[600px] flex-col rounded-lg items-center  flex-shrink-0 w-[450px] md:w-[450px] lg:w-[500px] snap-center bg-[#292929] p-5  cursor-pointer overflow-y-scroll
+    }
+    
+    .headers_sections2{
+        @apply  top-36 uppercase tracking-[3px] text-gray-500 text-center
+
+    }
+    .inputStyle{
+        @apply  w-[340px] md:w-[460px]  bg-[#242424] border border-[#F7AB0A]/60 rounded-md p-2 text-[#F7AB0A]/60 caret-[#F7AB0A] 
+    }
+    .eye_btn{
+       @apply w-5 h-5 absolute top-0 md:right-[31rem] -right-3 cursor-pointer text-gray-300
+    }
+    .eye_btn1{
+        @apply w-5 h-5 absolute -top-4  -right-4 cursor-pointer text-gray-300
+    }
+    .eye_btn:hover  , .eye_btn1:hover{
+        @apply bg-[#F7AB0A]/40  text-black p-[2px] rounded-sm
+    }
+
+    .cardContact{
+        @apply flex flex-col justify-center items-center bg-[#F7AB0A]/40 border border-[#F7AB0A]/40 p-5 rounded-md hover:border-[#F7AB0A]/80 hover:bg-[#F7AB0A]/60 text-xs md:text-base
+    }
+    .imageHover{
+        @apply w-80 transition-all duration-500 
+    }
+    .imageContainer{
+        @apply absolute  bg-black h-[400px] bg-opacity-70 z-50 w-screen flex-shrink-0 snap-center flex-col space-y-5 items-center justify-center p-10 md:p-20 text-center
+    }
+    .imageContainer h4 ,.imageContainer p ,.imageContainer a ,.imageContainer .eye_btn{
+        @apply hidden
+    }
+    .imageContainer .eye_btn1{
+        @apply visible
+    }
+
+    .imageContainer .imageHover {
+        @apply md:w-[80%] md:h-full  w-[20rem] h-[15rem]
+    }
+    .imageContainerWithOutHover{
+        @apply w-screen flex-shrink-0 snap-center flex-col space-y-5 items-center justify-center p-10 md:p-20 text-center
+    }
+
+}
