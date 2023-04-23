@@ -1,7 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 type Props = {
-    directionLeft?:boolean,
     singleSkill:{
         id:number,
         image:string,
@@ -9,7 +8,7 @@ type Props = {
     }
 }
 
-export default function SkillCardComponent({directionLeft ,singleSkill}: Props) {
+export default function SkillCardComponent({singleSkill}: Props) {
     return (
     <div className='group relative flex  cursor-pointer'>
 

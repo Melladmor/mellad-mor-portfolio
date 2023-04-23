@@ -77,9 +77,6 @@ height: 600px;
     }
 }
 
-
-
-
 .main_container{
     background-color: rgb(31 31 56 /90%);
 }
@@ -92,14 +89,9 @@ body{
 }
 
 
-
-
-
 @layer components{
     .heroButton{
-        @apply px-6 md:py-2 py-1 border border-[#242424] rounded-full uppercase md:text-xs text-[11px]  md:tracking-[3px] tracking-[1px] 
-        text-gray-500 transition-all 
-        hover:border-[#F7AB0A]/40 
+        @apply px-6 md:py-2 py-1 border border-[#242424] rounded-full uppercase md:text-xs text-[11px]  md:tracking-[3px] tracking-[1px]  text-gray-500 transition-all  hover:border-[#F7AB0A]/40 
         hover:text-[#F7AB0A]/40
     }
     .heroButton2{
@@ -119,11 +111,9 @@ body{
         @apply flex  flex-col rounded-lg items-center  flex-shrink-0 w-[400px] h-[500px] md:w-[500px] lg:w-[600px] snap-center bg-[#292929] p-5 overflow-y-scroll
     }
 
-
-
     .cardExperince{
         @apply flex    h-[490px] w-[300px] md:w-[450px] md:h-[600px] lg:w-[500px] flex-col rounded-lg items-center  flex-shrink-0    snap-center bg-[#292929] p-5  cursor-pointer overflow-y-scroll overflow-x-hidden
-                 hover:opacity-100 opacity-80 transition-opacity duration-200  
+        hover:opacity-100 opacity-80 transition-opacity duration-200  
     } 
     
     .headers_sections2{
