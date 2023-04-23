@@ -21,7 +21,7 @@ export default function ExperienceCard({el}: Props) {
 
     
   return (
-    <article className='cardExperince'>
+    <article className='cardExperince2 md:cardExperince'>
         <div>
             <motion.img
             initial={{

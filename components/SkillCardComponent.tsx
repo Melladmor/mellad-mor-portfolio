@@ -15,16 +15,18 @@ export default function SkillCardComponent({directionLeft ,singleSkill}: Props) 
 
         <motion.img
         initial={{
-            x:directionLeft ?-100:100,
+            y:100,
             opacity:0
         }}
         transition={{
             duration:1
         }}
         whileInView={{
-            x:0,
+            y:0,
             opacity:1,
         }}
+        viewport={{once:true}}
+
         src={singleSkill?.image}
         className='rounded-full border border-[#F7AB0A] object-cover w-16 h-16 xl:w-28 xl:h-28 filter group-hover:grayscale transition duration-300 ease-in-out'
         />
