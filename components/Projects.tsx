@@ -50,7 +50,7 @@ function Projects({}: Props) {
                 </Fancybox>
                 <div className='space-y-3 flex justify-center flex-col items-center'>
                     <h4 className='text-2xl md:text-4xl font-semibold'>{el?.projectName}</h4>
-                    <p className='text-sm md:text-md md:text-lg w-[400px] md:w-[700px]'>{el?.projectDesc}</p>
+                    <p className='text-sm p-3 md:text-md md:text-lg w-[400px] md:w-[700px]'>{el?.projectDesc}</p>
                 </div>
                 <div className='flex flex-col md:flex-row gap-2 justify-center items-center' >
                     {el?.url &&
