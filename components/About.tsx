@@ -1,19 +1,19 @@
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { aboutInfoData } from "@/data/aboutData";
+
 type Props = {};
 
 export default function About({}: Props) {
-  const data = aboutInfoData;
   const informations = aboutInfoData.information;
   const image = aboutInfoData.image;
+
   return (
     <motion.div
       initial={{
         opacity: 0,
       }}
-      whileInView={{
+      animate={{
         opacity: 1,
       }}
       transition={{
@@ -21,14 +21,14 @@ export default function About({}: Props) {
       }}
       className="h-screen flex flex-col justify-center items-center space-y-3">
       <h3 className="headers_sections">About</h3>
-      <div className="flex flex-col justify-center items-center text-center md:flex-row md:gap-20 md:text-start  space-y-3">
+      <div className="flex flex-col justify-center items-center text-center md:flex-row md:gap-20 md:text-start space-y-3">
         <div>
           <motion.img
             initial={{
               x: -200,
               opacity: 0.5,
             }}
-            whileInView={{
+            animate={{
               x: 0,
               opacity: 1,
             }}
