@@ -1,6 +1,6 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { aboutInfoData } from "@/data/aboutData";
+import { InstanceMotion } from "@/pages";
 
 type Props = {};
 
@@ -9,7 +9,7 @@ export default function About({}: Props) {
   const image = aboutInfoData.image;
 
   return (
-    <motion.div
+    <InstanceMotion.div
       initial={{
         opacity: 0,
       }}
@@ -23,7 +23,7 @@ export default function About({}: Props) {
       <h3 className="headers_sections">About</h3>
       <div className="flex flex-col justify-center items-center text-center md:flex-row md:gap-20 md:text-start space-y-3">
         <div>
-          <motion.img
+          <InstanceMotion.img
             initial={{
               x: -200,
               opacity: 0.5,
@@ -41,7 +41,7 @@ export default function About({}: Props) {
           />
         </div>
 
-        <motion.div
+        <InstanceMotion.div
           initial={{
             x: -300,
             opacity: 0,
@@ -64,8 +64,8 @@ export default function About({}: Props) {
           <p className="text-xs md:text-lg md:max-w-lg md:text-start w-96 md:w-full">
             {informations}
           </p>
-        </motion.div>
+        </InstanceMotion.div>
       </div>
-    </motion.div>
+    </InstanceMotion.div>
   );
 }

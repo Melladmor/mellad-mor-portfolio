@@ -18,11 +18,35 @@ import {
 } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import CvModal from "@/components/CvModal";
+import Image from "next/image";
+import { motion } from "framer-motion";
+export const InstanceNextLink = Link as any;
+export const InstancNextHead = Head as any;
+export const InstanceNextImage = Image as any;
+export const InstanceMotion = motion as any
+const InstanceHeader = Header as any
+const InstanceCvModal = CvModal as any;
+const InstancHeroSection = Hero as any;
+const InstanceAboutSection = About as any;
+const InstanceWorkExperience = WorkExperience as any;
+const InstanceSkills = Skills as any;
+const InstanceProjects = Projects as any;
+const InstanceContact = Contact as any;
+const InstanceHomeIcon = HomeIcon as any
+const InstanceUserIcon = UserIcon as any
+const InstanceBookmarkIcon = BookmarkIcon as any
+const InstanceTableCellsIcon = TableCellsIcon as any
+const InstancePhoneIcon = PhoneIcon as any
+const InstanceInboxArrowDownIcon = InboxArrowDownIcon as any
+const InstanceArrowUpIcon = ArrowUpIcon as any
+
 export default function Home() {
   const [showCvModal, setShowCvModal] = useState<boolean>(false);
+
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen sanp-y snap-mandatory overflow-scroll z-0 main_container overflow-x-hidden">
-      {showCvModal && <CvModal setShowCvModal={setShowCvModal} />}
+      
+      {showCvModal && <InstanceCvModal setShowCvModal={setShowCvModal} />}
 
       <Head>
         <title>Mellad Morshed</title>
@@ -34,75 +58,63 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <InstanceHeader />
 
       <main className="main_sections">
-        {/* hero */}
         <section id="hero" className="snap-start">
-          <Hero />
+          <InstancHeroSection />
         </section>
 
-        {/* about */}
         <section id="about" className="snap-center">
-          <About />
+          <InstanceAboutSection />
         </section>
-
-        {/* experince */}
 
         <section id="experince" className="snap-center">
-          <WorkExperience />
+          <InstanceWorkExperience />
         </section>
-
-        {/* skills */}
 
         <section id="skills" className="snap-start">
-          <Skills />
+          <InstanceSkills />
         </section>
-
-        {/* projects */}
 
         <section id="projects" className="snap-start">
-          <Projects />
+          <InstanceProjects />
         </section>
 
-        {/* contact */}
-
         <section id="contact" className="snap-start">
-          <Contact />
+          <InstanceContact />
         </section>
       </main>
 
       <footer className="sticky bottom-5 w-full flex justify-center items-center z-50">
         <div className="flex flex-row gap-3">
-          <Link href="#hero">
-            <HomeIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60 xl:hidden" />
-          </Link>
+          <InstanceNextLink href="#hero">
+            <InstanceHomeIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60 xl:hidden" />
+          </InstanceNextLink>
 
-          <Link href="#about">
-            <UserIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60 xl:hidden" />
-          </Link>
+          <InstanceNextLink href="#about">
+            <InstanceUserIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60 xl:hidden" />
+          </InstanceNextLink>
 
-          <Link href="#experince">
-            <BookmarkIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60 xl:hidden" />
-          </Link>
+          <InstanceNextLink href="#experince">
+            <InstanceBookmarkIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60 xl:hidden" />
+          </InstanceNextLink>
 
-          <Link href="#projects">
-            <TableCellsIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60 xl:hidden" />
-          </Link>
+          <InstanceNextLink href="#projects">
+            <InstanceTableCellsIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60 xl:hidden" />
+          </InstanceNextLink>
 
-          <Link href="#contact">
-            <PhoneIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60" />
-          </Link>
+          <InstanceNextLink href="#contact">
+            <InstancePhoneIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60" />
+          </InstanceNextLink>
 
-          {/* <Link href='image/MelladMorshed.pdf' download> */}
           <button onClick={() => setShowCvModal(!showCvModal)}>
-            <InboxArrowDownIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60" />
+            <InstanceInboxArrowDownIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60" />
           </button>
-          {/* </Link> */}
 
-          <Link href="#hero">
-            <ArrowUpIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60 " />
-          </Link>
+          <InstanceNextLink href="#hero">
+            <InstanceArrowUpIcon className="h-7 w-7 hover:bg-[#F7AB0A] rounded-full p-1 bg-[#F7AB0A]/60 " />
+          </InstanceNextLink>
         </div>
       </footer>
     </div>

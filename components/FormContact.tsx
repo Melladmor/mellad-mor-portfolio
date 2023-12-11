@@ -1,99 +1,106 @@
-import React, { useState } from 'react'
-import {motion} from 'framer-motion'
-import {useForm  ,SubmitHandler} from 'react-hook-form'
-import { HeaderData } from '@/typings'
+import { useForm } from "react-hook-form";
+import { HeaderData } from "@/typings";
+import { InstanceMotion } from "@/pages";
 type Props = {
-    pageInfoData:HeaderData
-}
+  pageInfoData: HeaderData;
+};
 
-type FormValues ={
-    name:string,
-    email:string,
-    message:string
-}
-
-function FormContact({pageInfoData}: Props) {
-
-
-    const {register , handleSubmit  , formState:{errors}} = useForm()
-    const onSubmit = (data:any)=>{
-        window.location.href = `mailto:${pageInfoData.email}?body=Hi, My name is  ${data?.name}. 
-        ${data?.message}`
-    };
+function FormContact({ pageInfoData }: Props) {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data: any) => {
+    window.location.href = `mailto:${pageInfoData.email}?body=Hi, My name is  ${data?.name}. 
+        ${data?.message}`;
+  };
 
   return (
-    <form className='grid grid-cols-1 gap-2' onSubmit={handleSubmit(onSubmit)}>
-        <motion.div
+    <form className="grid grid-cols-1 gap-2" onSubmit={handleSubmit(onSubmit)}>
+      <InstanceMotion.div
         initial={{
-        x:-100,
-        opacity:0,
-        scale:0.5
+          x: -100,
+          opacity: 0,
+          scale: 0.5,
         }}
         whileInView={{
-        x:0,
-        opacity:1,
-        scale:1
+          x: 0,
+          opacity: 1,
+          scale: 1,
         }}
         transition={{
-        duration:1.5
-        }}
-        >
-            <input   {...register('name')} type='text' className='inputStyle' placeholder='Name'/>
-        </motion.div>
+          duration: 1.5,
+        }}>
+        <input
+          {...register("name")}
+          type="text"
+          className="inputStyle"
+          placeholder="Name"
+        />
+      </InstanceMotion.div>
 
-        <motion.div
+      <InstanceMotion.div
         initial={{
-        x:100,
-        opacity:0,
-        scale:0.5
+          x: 100,
+          opacity: 0,
+          scale: 0.5,
         }}
         whileInView={{
-        x:0,
-        opacity:1,
-        scale:1
+          x: 0,
+          opacity: 1,
+          scale: 1,
         }}
         transition={{
-        duration:1.5
-        }}
-        >
-            <input   {...register('email')} type='email' className='inputStyle' placeholder='Email'/>
-        </motion.div>
-        <motion.div
+          duration: 1.5,
+        }}>
+        <input
+          {...register("email")}
+          type="email"
+          className="inputStyle"
+          placeholder="Email"
+        />
+      </InstanceMotion.div>
+      <InstanceMotion.div
         initial={{
-            x:-100,
-            opacity:0,
-            scale:0.5
-            }}
-            whileInView={{
-            x:0,
-            opacity:1,
-            scale:1
-            }}
-            transition={{
-            duration:1.5
-            }}
-        >
-            <textarea  {...register('message')} className='inputStyle' placeholder='Message'></textarea>
-        </motion.div>
+          x: -100,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}>
+        <textarea
+          {...register("message")}
+          className="inputStyle"
+          placeholder="Message"></textarea>
+      </InstanceMotion.div>
 
-        <motion.button
+      <InstanceMotion.button
         initial={{
-        y:100,
-        opacity:0,
-        scale:0.5
+          y: 100,
+          opacity: 0,
+          scale: 0.5,
         }}
         whileInView={{
-        y:0,
-        opacity:1,
-        scale:1
+          y: 0,
+          opacity: 1,
+          scale: 1,
         }}
         transition={{
-        duration:1.5
+          duration: 1.5,
         }}
-        type='submit'
-        className='border border-[#F7AB0A]/60 p-2 rounded-md hover:border-[#F7AB0A]/80 hover:bg-[#F7AB0A]/60 bg-[#F7AB0A]/40'>Send</motion.button>
+        type="submit"
+        className="border border-[#F7AB0A]/60 p-2 rounded-md hover:border-[#F7AB0A]/80 hover:bg-[#F7AB0A]/60 bg-[#F7AB0A]/40">
+        Send
+      </InstanceMotion.button>
     </form>
-  )
+  );
 }
 
-export default FormContact
+export default FormContact;

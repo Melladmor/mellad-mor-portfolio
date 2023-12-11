@@ -1,6 +1,5 @@
 import { heroInfoData } from "@/data/heroData";
-import Image from "next/image";
-import Link from "next/link";
+import { InstanceNextImage, InstanceNextLink } from "@/pages";
 
 type Props = {
   setShowCvModal: (val: boolean) => void;
@@ -41,7 +40,7 @@ export default function CvModal(props: Props) {
                   </svg>
                 </button>
               </div>
-              <Image
+              <InstanceNextImage
                 src={image}
                 alt="..."
                 width={144}
@@ -50,18 +49,18 @@ export default function CvModal(props: Props) {
                 loading="lazy"
               />
               <div className="flex justify-center mt-5 gap-2">
-                <Link
+                <InstanceNextLink
                   className="modalCvButton"
                   href="image/Mellad Morshed C.V.pdf"
                   download>
                   Download Cv
-                </Link>
-                <Link
+                </InstanceNextLink>
+                <InstanceNextLink
                   href="image/Mellad Morshed Resume.pdf"
                   className="modalCvButton"
                   download>
                   Download Resume
-                </Link>
+                </InstanceNextLink>
               </div>
             </div>
           </div>

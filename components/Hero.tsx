@@ -2,9 +2,10 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackGroundCircle from "./BackGroundCircle";
 import Image from "next/image";
-import Link from "next/link";
 import { heroInfoData } from "@/data/heroData";
-
+import { InstanceNextImage, InstanceNextLink } from "@/pages";
+const InstanceBackGroundCircle = BackGroundCircle as any;
+const InstanceCursor = Cursor as any;
 export default function Hero() {
   const data = heroInfoData;
   const typingText = heroInfoData.typingText;
@@ -18,8 +19,8 @@ export default function Hero() {
   });
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-      <BackGroundCircle />
-      <Image
+      <InstanceBackGroundCircle />
+      <InstanceNextImage
         src={image}
         alt="..."
         width={144}
@@ -32,25 +33,25 @@ export default function Hero() {
         </h2>
         <h1 className="text-1xl md:text-5xl  font-semibold p-5">
           <span className="mr-3">{text}</span>
-          <Cursor cursorColor="#F7AB0A" />
+          <InstanceCursor cursorColor="#F7AB0A" />
         </h1>
 
         <div className="md:pt-5 pt-2">
-          <Link href="#about">
+          <InstanceNextLink href="#about">
             <button className="heroButton">About</button>
-          </Link>
+          </InstanceNextLink>
 
-          <Link href="#experince">
+          <InstanceNextLink href="#experince">
             <button className="heroButton">Experince</button>
-          </Link>
+          </InstanceNextLink>
 
-          <Link href="#skills">
+          <InstanceNextLink href="#skills">
             <button className="heroButton">Skills</button>
-          </Link>
+          </InstanceNextLink>
 
-          <Link href="#projects">
+          <InstanceNextLink href="#projects">
             <button className="heroButton">Projects</button>
-          </Link>
+          </InstanceNextLink>
         </div>
       </div>
     </div>

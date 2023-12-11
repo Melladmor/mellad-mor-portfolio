@@ -20,7 +20,7 @@ export const skillsInfoData: SkillsData = {
     {
       id: 16,
       image: "/image/tecno/ts.png",
-      prog: 30,
+      prog: 90,
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ export const skillsInfoData: SkillsData = {
     {
       id: 5,
       image: "/image/tecno/mui.png",
-      prog: 70,
+      prog: 80,
     },
     {
       id: 14,
@@ -40,12 +40,12 @@ export const skillsInfoData: SkillsData = {
     {
       id: 9,
       image: "/image/tecno/tialwend.png",
-      prog: 75,
+      prog: 70,
     },
     {
       id: 6,
       image: "/image/tecno/react.png",
-      prog: 85,
+      prog: 90,
     },
     {
       id: 8,
@@ -65,7 +65,7 @@ export const skillsInfoData: SkillsData = {
     {
       id: 7,
       image: "/image/tecno/redux.png",
-      prog: 85,
+      prog: 80,
     },
     {
       id: 12,
@@ -75,12 +75,12 @@ export const skillsInfoData: SkillsData = {
     {
       id: 10,
       image: "/image/tecno/git.webp",
-      prog: 75,
+      prog: 80,
     },
     {
       id: 13,
       image: "/image/tecno/npm.png",
-      prog: 78,
+      prog: 100,
     },
   ],
 };
