@@ -48,47 +48,27 @@ export const expInfoData: ExpData = {
         {
           id: 1,
           title:
-            "Collaborate with cross-functional teams to analyze and understand requirements for the ERP system.",
+            "Collaborated with a cross-functional team of 10 members to analyze ERP system requirements, ensuring seamless integration and successful implementation.",
         },
         {
           id: 2,
           title:
-            "Design and implement new features and enhancements in accordance with project specifications.",
+            "Conceived and executed more than 5 innovative features, such as (Blog Management , View Product Page ,Quiz Management and Invoices Management and among other), to enhance overall system functionality.",
         },
         {
           id: 3,
           title:
-            "Develop and maintain responsive and user-friendly interfaces using React.",
+            "Refactored and rewrote code to enhance readability, maintainability, and scalability.",
         },
         {
           id: 4,
           title:
-            "Troubleshoot, debug, and optimize existing features to ensure optimal performance.",
+            "Contributed to the agile development process, including sprint planning, daily stand-ups, and sprint reviews.",
         },
         {
           id: 5,
           title:
-            "Work closely with UX/UI designers to create visually appealing and intuitive interfaces.",
-        },
-        {
-          id: 6,
-          title:
-            "Participate in code reviews to maintain code quality and ensure adherence to coding standards.",
-        },
-        {
-          id: 7,
-          title:
-            "Stay updated on emerging technologies and industry best practices to continuously improve the development process.",
-        },
-        {
-          id: 8,
-          title:
-            "Contribute to the agile development process, including sprint planning, daily stand-ups, and sprint reviews.",
-        },
-        {
-          id: 9,
-          title:
-            "Collaborate with backend developers to integrate frontend components with server-side logic.",
+            "Daily Stand-up meeting with the entire development team, including frontend developers, backend developers to discus work progress.",
         },
       ],
     },
@@ -130,22 +110,27 @@ export const expInfoData: ExpData = {
         {
           id: 1,
           title:
-            "Served as a Front-end Developer at Perla Tech, specializing in the development and enhancement of user interfaces for various websites.",
+            "Constructed a comprehensive e-learning website with over 20 pages and various sections using advanced technologies like React Query and Redux Toolkit which increased the efficiency and speed of the website.",
         },
         {
           id: 2,
           title:
-            "Collaborated with a multidisciplinary team to analyze project requirements and ensure efficient implementation according to established standards.",
+            "Improved the performance and accessibility of the website using Google Lighthouse and Web Vitals (90+ score).",
         },
         {
           id: 3,
           title:
-            "Designed and implemented responsive user interfaces using advanced technologies, including React and other modern tools.",
+            "Created more than 20 reusable components to enhance the professionalism and maintainability of the website.",
         },
         {
           id: 4,
           title:
-            "Improved user experience by addressing errors and optimizing performance to ensure smooth interaction.",
+            "Interacted daily with the developers and designers team to allocate tasks and ensure timely completion of assignments, while also performing daily tests for the work.",
+        },
+        {
+          id: 5,
+          title:
+            "Utilized MUI material UI to create visually appealing and engaging user interfaces.",
         },
       ],
     },
@@ -191,35 +176,35 @@ export const expInfoData: ExpData = {
         {
           id: 1,
           title:
-            "Contributed as a Front-end Developer at Future Code, specializing in React, where I worked on various projects, including websites and dashboards.",
+            "Developed 7 different projects ranging from websites to dashboards using HTML, CSS, JavaScript, and React.",
         },
         {
           id: 2,
           title:
-            "Developed and maintained multiple projects, demonstrating proficiency in advanced technologies such as Redux, and Redux Toolkit.",
+            "Built 2 e-commerce websites from scratch, including gathering requirements, designing, testing, and delivering the final products.",
         },
         {
           id: 3,
           title:
-            "Collaborated closely with cross-functional teams to analyze project requirements and implement effective solutions.",
+            "Worked on 5 dashboards, 4 of them for one project and one for a separate project, using React , Bootstrap and MUI.",
         },
         {
           id: 4,
           title:
-            "Successfully delivered a range of web applications, ensuring high-quality user interfaces and experiences.",
+            "Coordinated daily with the backend developers and mobile developers team to ensure task completion and seamless integration of front-end and back-end functionalities.",
         },
         {
           id: 5,
           title:
-            "Utilized advanced Front-end frameworks and libraries, including Material-UI (MUI), to enhance the visual appeal and functionality of applications.",
+            "Crafted 2 templates for the dashboards and maintained the company's template.",
         },
       ],
     },
     {
       id: 4,
-      compImage: "/image/freelance.jfif",
+      compImage: "/image/it_land.jpg",
       jobTitle: "Front-End Developer",
-      compName: "Freelance",
+      compName: "IT-Land Technologies",
       tecno: [
         {
           id: 1,
@@ -246,35 +231,28 @@ export const expInfoData: ExpData = {
           image: "/image/tecno/redux.png",
         },
       ],
-      startDate: "1/2021",
-      endData: "7/2022",
+      startDate: "4/2021",
+      endData: "9/2022",
       points: [
         {
           id: 1,
-          title: "Front-End developer using react framework.",
+          title:
+            "Implemented responsive design principles, reducing page load times by 20% and ensuring optimal performance across various devices.",
         },
         {
           id: 2,
           title:
-            "Create clean interface and simple, intuitive interactions and experience.",
+            "Developed reusable React components, resulting in a 25% reduction in development time for subsequent projects.",
         },
         {
           id: 3,
-          title: "Creating graduation projects for students",
+          title:
+            "Facilitated effective communication between frontend and backend teams.",
         },
         {
           id: 4,
           title:
-            "Establishing individual projects by contracting with companies and sometimes clients",
-        },
-        {
-          id: 6,
-          title: "Dealing with API and create clean api call.",
-        },
-        {
-          id: 7,
-          title:
-            "Writing full project descriptions and creating appropriate use cases.",
+            "Established Git workflows and branching strategies, reducing integration conflicts by 20% and enabling smoother collaboration among team members.",
         },
       ],
     },

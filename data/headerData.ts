@@ -25,10 +25,10 @@ export const headerInfoData: HeaderData = {
     {
       id: 5,
       name: "whatsapp",
-      url: "+963951427208",
+      url: "+971552499591",
     },
   ],
   email: "melladmrshid@gmail.com",
-  phoneNumber: "+963951427208",
-  loaction: "Syria-Damascus",
+  phoneNumber: "+971552499591",
+  loaction: "Duabi-UAE",
 };
