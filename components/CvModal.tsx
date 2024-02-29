@@ -51,15 +51,9 @@ export default function CvModal(props: Props) {
               <div className="flex justify-center mt-5 gap-2">
                 <InstanceNextLink
                   className="modalCvButton"
-                  href="image/Mellad Morshed C.V.pdf"
+                  href="/image/Mellad-Morshed.pdf"
                   download>
                   Download Cv
-                </InstanceNextLink>
-                <InstanceNextLink
-                  href="image/Mellad Morshed Resume.pdf"
-                  className="modalCvButton"
-                  download>
-                  Download Resume
                 </InstanceNextLink>
               </div>
             </div>
