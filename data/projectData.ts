@@ -4,6 +4,34 @@ export const projectsInfoData: ProjectData = {
   project: [
     {
       id: 1,
+      projectName: "Audit Station Platform",
+      projectImage: "/image/project/auditplatform.png",
+      projectDesc:
+        "Audit Station is a platform that connects businesses with accounting professionals. I led frontend development using React.js and Next.js, built responsive and high-performance UIs, and contributed to defining product features and managing agile workflows. I also coordinated tasks and ensured smooth communication to deliver key features on time. This project reflects my ability to build scalable interfaces and manage product development efficiently.",
+      url: "auditstation.io",
+      github: null,
+    },
+    {
+      id: 2,
+      projectName: "Tax Station",
+      projectImage: "/image/project/taxstation.png",
+      projectDesc:
+        "Tax Station is a web-based platform designed to simplify tax services for businesses and individuals. I contributed to frontend development using React.js and Next.js, creating user-friendly and responsive interfaces. I also supported product planning, feature implementation, and agile task coordination. This project highlights my ability to deliver reliable frontend solutions while helping streamline financial workflows through intuitive digital tools.",
+      url: "",
+      github: null,
+    },
+    {
+      id: 3,
+      projectName: "Audit Station Website Panel",
+      projectImage: "/image/project/company.png",
+      projectDesc:
+        "Audit Station Website Dashboard is a content management panel built to control the company’s public website. I developed the frontend using React.js and Next.js, creating a clean, intuitive UI for managing pages, services, news, and multilingual content. I also contributed to structuring the CMS features and ensuring a scalable and maintainable frontend architecture. This project reflects my ability to deliver admin tools that empower non-technical teams to manage content efficiently.",
+      url: "",
+      github: null,
+    },
+
+    {
+      id: 1,
       projectName: "Ososs Dashboard",
       projectImage: "/image/project/ososs.png",
       projectDesc:

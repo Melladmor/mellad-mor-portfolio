@@ -4,6 +4,85 @@ export const expInfoData: ExpData = {
   experience: [
     {
       id: 1,
+      compImage: "/image/audit.jpeg",
+      jobTitle: "Software Engineer- Frontend",
+      compName: "Audit Station",
+      tecno: [
+        {
+          id: 1,
+          image: "/image/tecno/html.webp",
+        },
+        {
+          id: 2,
+          image: "/image/tecno/css.webp",
+        },
+        {
+          id: 3,
+          image: "/image/tecno/js.jpg",
+        },
+        {
+          id: 4,
+          image: "/image/tecno/chakra.jpeg",
+        },
+        {
+          id: 5,
+          image: "/image/tecno/react.png",
+        },
+        {
+          id: 6,
+          image: "/image/tecno/ts.png",
+        },
+        {
+          id: 7,
+          image: "/image/tecno/tialwend.png",
+        },
+        {
+          id: 8,
+          image: "/image/tecno/reactquery.png",
+        },
+      ],
+      startDate: "3/2024",
+      isCurrentJob: true,
+      points: [
+        {
+          id: 1,
+          title:
+            "Led a team of 10 developers to build and enhance two internal platforms using React and Next.js.",
+        },
+        {
+          id: 2,
+          title:
+            "Directed the development of 30+ features, from documenting requirements to final deployment.",
+        },
+        {
+          id: 3,
+          title:
+            "Managed the team's Agile workflows (sprints, task tracking), reducing delivery time by ~30%.",
+        },
+        {
+          id: 4,
+          title:
+            "Improved application performance by 45% through advanced rendering and code splitting.",
+        },
+        {
+          id: 5,
+          title:
+            "Increased user engagement by 30% with responsive and accessible layouts.",
+        },
+        {
+          id: 6,
+          title:
+            "Enhanced code quality and raised test coverage by 25% across the team.",
+        },
+        {
+          id: 7,
+          title:
+            "Directed backend collaboration to refine API design, ensuring a more stable UI.",
+        },
+      ],
+    },
+    {
+      id: 2,
       compImage: "/image/ososs.jpg",
       jobTitle: "Front-End Developer",
       compName: "Ososs",
@@ -73,7 +152,7 @@ export const expInfoData: ExpData = {
       ],
     },
     {
-      id: 2,
+      id: 3,
       compImage: "/image/perlatech.jpg",
       jobTitle: "Front-End Developer",
       compName: "Perla Tech",
@@ -135,7 +214,7 @@ export const expInfoData: ExpData = {
       ],
     },
     {
-      id: 3,
+      id: 5,
       compImage: "/image/futureCodeLogo.jpg",
       jobTitle: "Front-End Developer",
       compName: "Future Code",
