@@ -8,7 +8,7 @@ export const projectsInfoData: ProjectData = {
       projectImage: "/image/project/auditplatform.png",
       projectDesc:
         "Audit Station is a platform that connects businesses with accounting professionals. I led frontend development using React.js and Next.js, built responsive and high-performance UIs, and contributed to defining product features and managing agile workflows. I also coordinated tasks and ensured smooth communication to deliver key features on time. This project reflects my ability to build scalable interfaces and manage product development efficiently.",
-      url: "auditstation.io",
+      url: "https://auditstation.io",
       github: null,
     },
     {
